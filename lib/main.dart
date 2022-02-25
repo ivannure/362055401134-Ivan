@@ -27,7 +27,7 @@ class _BelajarFormState extends State<BelajarForm> {
               Container(
                 width: 130,
                 height: 130,
-                child: Center(child: Image(image: AssetImage('lib/asset/image/poliwangi.png'))),
+                child: Center(child: Image(image: NetworkImage('https://th.bing.com/th/id/OIP.GYBypI9x_ldh3xsMOeQKYAHaHJ?pid=ImgDet&rs=1'))),
               ),
 
               SizedBox(
