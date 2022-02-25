@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     title: "Belajar Form Flutter",
+    debugShowCheckedModeBanner: false,
     home: BelajarForm(),
   ));
 }
