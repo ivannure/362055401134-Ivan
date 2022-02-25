@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Materialapp());
 }
 
-class MyApp extends StatelessWidget {
+class Materialapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -20,20 +20,25 @@ class pagelist extends StatelessWidget {
   ];
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.black, title: Text('Notifikasi')),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text('Notifikasi'),
+        centerTitle: true,
+      ),
       body: ListView.builder(
         padding: EdgeInsets.only(top: 100),
         itemBuilder: (context, index) {
           return Card(
+            margin: EdgeInsets.all(15),
+            color: Colors.orange,
+            shadowColor: Colors.black,
             child: ListTile(
-              title: Text(keterangan[index], style: TextStyle(fontSize: 30)),
-              subtitle: Text('Hi Ivan, Silahkan lihat identitas anda'),
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.notifications,
-                ),
-              ),
-            ),
+                contentPadding: EdgeInsets.all(20),
+                title: Text(keterangan[index], style: TextStyle(fontSize: 16)),
+                subtitle: Text('Hi Ivan,silahkan cek Identitas anda disini'),
+                leading: CircleAvatar(
+                    backgroundColor: Colors.green,
+                    child: Icon(Icons.notifications))),
           );
         },
         itemCount: keterangan.length,
@@ -57,7 +62,7 @@ class pagelist extends StatelessWidget {
             title: Text('Akun'),
           ),
         ],
-        currentIndex: 0,
+        currentIndex: 1,
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.grey,
         showUnselectedLabels: true,
