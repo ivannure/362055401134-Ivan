@@ -66,23 +66,27 @@ class home extends StatelessWidget {
               ),
             ),
             Container(
-              decoration: BoxDecoration(
-                color: Colors.grey[200],
-              ),
+              decoration: BoxDecoration(color: Colors.white),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
-                    children: [Icon(Icons.book), Text('Jurusan')],
+                    children: [Icon(Icons.school), Text('Jurusan')],
                   ),
                   Column(
                     children: [Icon(Icons.person), Text('Identitas')],
                   ),
                   Column(
-                    children: [Icon(Icons.note), Text('Kartu Peserta')],
+                    children: [
+                      Icon(Icons.format_list_numbered_rtl_rounded),
+                      Text('Kartu Peserta')
+                    ],
                   ),
                   Column(
-                    children: [Icon(Icons.note_add), Text('Slip Pembayaran')],
+                    children: [
+                      Icon(Icons.attach_money),
+                      Text('Slip Pembayaran')
+                    ],
                   ),
                 ],
               ),
@@ -114,7 +118,7 @@ class home extends StatelessWidget {
                 children: [
                   Card(
                     margin: EdgeInsets.all(15),
-                    color: Color.fromRGBO(104, 164, 136, 100),
+                    color: Colors.orange,
                     shadowColor: Colors.black,
                     child: ListTile(
                         contentPadding: EdgeInsets.all(20),
@@ -123,11 +127,11 @@ class home extends StatelessWidget {
                         subtitle: Text('Dapatkan Informasi SBMPTN Disini'),
                         leading: CircleAvatar(
                             backgroundColor: Colors.green,
-                            child: Icon(Icons.notifications))),
+                            child: Icon(Icons.school_outlined))),
                   ),
                   Card(
                     margin: EdgeInsets.all(15),
-                    color: Color.fromRGBO(104, 164, 136, 100),
+                    color: Colors.orange,
                     shadowColor: Colors.black,
                     child: ListTile(
                         contentPadding: EdgeInsets.all(20),
@@ -136,21 +140,22 @@ class home extends StatelessWidget {
                         subtitle: Text('Dapatkan Jadwal SBMPTN Disini'),
                         leading: CircleAvatar(
                             backgroundColor: Colors.green,
-                            child: Icon(Icons.notifications))),
+                            child: Icon(Icons.school_outlined))),
                   ),
                   Card(
                     margin: EdgeInsets.all(15),
-                    color: Color.fromRGBO(104, 164, 136, 100),
+                    color: Colors.orange,
                     shadowColor: Colors.black,
                     child: ListTile(
-                        contentPadding: EdgeInsets.all(20),
-                        title: Text('Informasi SBMPTN',
-                            style: TextStyle(fontSize: 16)),
-                        subtitle: Text('Dapatkan Informasi SBMPTN Disini'),
-                        leading: CircleAvatar(
-                            backgroundColor: Colors.green,
-                            child: Icon(Icons.notifications))),
-                  ),
+                      contentPadding: EdgeInsets.all(20),
+                      title: Text('Informasi SNMPTN',
+                          style: TextStyle(fontSize: 16)),
+                      subtitle: Text('Dapatkan Informasi SNMPTN Disini'),
+                      leading: CircleAvatar(
+                          backgroundColor: Colors.green,
+                          child: Icon(Icons.school_outlined)),
+                    ),
+                  )
                 ],
               ),
             )
