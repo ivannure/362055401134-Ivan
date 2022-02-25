@@ -6,11 +6,7 @@ void main() {
     title: "UTS Pemograman Mobile",
     home: Login(),
     debugShowCheckedModeBanner: false,
-    // initialRoute: '/',
-    // routes: <String, WidgetBuilder>{
-    //   '/': (context) => Login(),
-    //   '/menudata': (context) => menudata(),
-    // },
+     },
   ));
 }
 
